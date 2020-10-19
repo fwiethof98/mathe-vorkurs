@@ -2,11 +2,14 @@
 import os
 import glob
 
+from dotenv import load_dotenv
 import discord
 from discord.message import Attachment
 
-TOKEN = 'NzY3MDA0NjYyNzIxMDE5OTA1.X4rmwQ.kOcZMd5nx8KYLmUVRDK3MpaU1h0'
-GUILD = 'EI TUM 2020 :*'
+load_dotenv()
+
+TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD = os.getenv('DISCORD_GUILD')
 
 client = discord.Client()
 
