@@ -1,0 +1,73 @@
+\defcounter {refsection}{0}\relax 
+ \thispagestyle {empty}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Übung 1}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Aufgabe 1.2}{1}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Aufgabe 1.3}{1}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Aufgabe 1.4}{1}{subsection.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Aufgabe 1.5}{2}{subsection.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5}Aufgabe 1.6}{3}{subsection.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6}Aufgabe 1.7}{3}{subsection.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.7}Aufgabe 1.8}{3}{subsection.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.8}Aufgabe 1.9}{4}{subsection.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.9}Aufgabe 1.10}{4}{subsection.1.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.10}Aufgabe 1.11}{5}{subsection.1.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.11}Aufgabe 1.12}{5}{subsection.1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.12}Aufgabe 1.13}{5}{subsection.1.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Übung 2}{6}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}DISCLAIMER - BITTE LESEN}{6}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Aufgabe 2.2}{7}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Aufgabe 2.3}{7}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Aufgabe 2.4}{8}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Aufgabe 2.5}{9}{subsection.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6}Aufgabe 2.6}{10}{subsection.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.7}Aufgabe 2.7}{11}{subsection.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.8}Aufgabe 2.8}{14}{subsection.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Übung 3}{14}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}DISCLAIMER - BITTE LESEN}{14}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Aufgabe 3.1}{14}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Aufgabe 3.2}{15}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Aufgabe 3.4}{16}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Aufgabe 3.5}{17}{subsection.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6}Aufgabe 3.6}{17}{subsection.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7}Aufgabe 3.7}{19}{subsection.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8}Aufgabe 3.8}{20}{subsection.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9}Aufgabe 3.9}{20}{subsection.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.10}Aufgabe 3.10}{22}{subsection.3.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.11}Aufgabe 3.11}{23}{subsection.3.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.12}Aufgabe 3.12}{23}{subsection.3.12}%

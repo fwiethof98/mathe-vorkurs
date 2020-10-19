@@ -1,0 +1,247 @@
+\documentclass{standalone}
+
+\begin{document}
+
+\section{Übung 1}
+
+\subsection{Aufgabe 1.2}
+
+\begin{enumerate}[a)]
+    \item $\frac{x-b}{a-b} + \frac{x-a}{b-a} 
+    = \frac{x-b}{a-b} - \frac{x-a}{a-b}
+    = \frac{a-b}{a-b}
+    = 1
+    $, für $a, b, x \in \mathbb{R}$
+
+    \item $(\frac{1}{a} + \frac{1}{b}) \cdot \frac{1}{c} =
+    \frac{1}{ac} + \frac{1}{bc}
+    $, für $a, b, c \in \mathbb{R}$ \textbackslash $\{0\}$
+    
+    \item $\frac{b^3+a^2b}{a^2b-2ab^2+b^3} = 
+    \frac{b}{b} \cdot \frac{b^2-a^2}{a^2-2ab+b^2} = 
+    \frac{(a+b)(a-b)}{(a-b)(a-b)} = 
+    \frac{a+b}{a-b}
+    $
+
+    \item $\frac{a^4-2a^2b^2+b^4}{(a-b)(a^2+2ab+b^2)} =
+    \frac{(a^2-b^2)(a^2-b^2)}{(a-b)(a+b)(a+b)} = 
+    \frac{(a+b)(a-b)(a+b)(a-b)}{(a-b)(a+b)(a+b)} = 
+    a-b
+    $
+
+    \item ($\frac{x-b}{a-b} + \frac{x-a}{b-a}) + (\frac{x-d}{c-d} + \frac{x-c}{d-c}) + (\frac{x-f}{e-f} + \frac{x-e}{e-f}) = \\
+    (\frac{x-b}{a-b} - \frac{x-a}{a-b}) + (\frac{x-d}{c-d} - \frac{x-c}{d-c}) + (\frac{2x-e-f}{e-f}) = \\
+    1 + 1 + \frac{2x-e-f}{e-f} = 2 + \frac{2x-e-f}{e-f}
+    $, für $e-f \in \mathbb{R}$ \textbackslash $\{0\}$
+\end{enumerate}
+
+\subsection{Aufgabe 1.3}
+
+\begin{enumerate}[a)]
+    \item $\sqrt{\sqrt[3]{\sqrt[4]{5}}} = ((5^\frac{1}{4})^\frac{1}{3})^\frac{1}{2} = 5^\frac{1}{24} = \sqrt[24]{5}$
+    \item $\sqrt{2^3} \cdot \sqrt{4^5} = \sqrt{2^3} \cdot \sqrt{2^{10}} = 2^{\frac{3}{2}} \cdot 2^{\frac{10}{2}} = 2^{\frac{13}{2}} $
+    \item $\frac{\sqrt{(a+b)^6}}{\sqrt[3]{(a+b)^2}} = (a+b)^{\frac{6}{2}} \cdot (a+b)^{-\frac{2}{3}} = 
+    (a+b)^{\frac{7}{3}}$
+    \item $\sqrt{a\sqrt{a\sqrt{a}}} = ((a^{\frac{1}{2}} \cdot a)^{\frac{1}{2}} \cdot a)^{\frac{1}{2}} = 
+    ((a^{\frac{3}{2}})^{\frac{1}{2}} \cdot a)^{\frac{1}{2}} = (a^{\frac{7}{4}})^{\frac{1}{2}} = 
+    a^{\frac{7}{8}}$
+    \item $\sqrt{\frac{{(-4)^6 9}}{2^4 4^4}} = \frac{(-4)^3 3}{2^2 4^2} = \frac{-4 \cdot 3}{2^2} = -3$
+    \item $\sqrt[5]{\sqrt{6} - \sqrt{2}} \cdot \sqrt{\sqrt{6}+ \sqrt{2}} = 
+    (\sqrt{6}-\sqrt{2})^\frac{1}{5} \cdot \frac{\sqrt{\sqrt{6}- \sqrt2}}{\sqrt{\sqrt{6}- \sqrt2}} \cdot \sqrt{\sqrt{6} + \sqrt{2}} =
+    (\sqrt{6}-\sqrt{2})^\frac{1}{5} \cdot \frac{\sqrt{6-2}}{\sqrt{\sqrt{6}-\sqrt{2}}} =
+    (\sqrt{6}-\sqrt{2})^{-\frac{3}{10}} \cdot 2$
+\end{enumerate}
+
+\subsection{Aufgabe 1.4}
+
+\begin{enumerate}[a)]
+    \item $\log_4 64 = 3$ mit $4^3 = 64$
+    \item $\log_2 \frac{1}{16} = -4$ mit $2^{-4} = \frac{1}{2^4} = \frac{1}{16}$
+    \item $\log_3 \sqrt{3} = \frac{1}{2}$ mit $\sqrt{3} = 3^{\frac{1}{2}}$
+    \item $\ln 2 + \ln 5 = \ln (2 \cdot 5) = \ln 10$
+    \item $\frac{1}{5} \ln x - \frac{1}{10} \ln x^2 + 3 \ln x - \frac{1}{2} \ln x^2  = 
+    \ln (x^{\frac{1}{5}} \cdot x^{-\frac{2}{10}} \cdot x^3 \cdot \frac{1}{x^\frac{2}{2}}) = 
+    \ln {x^2} = 2\ln x$
+\end{enumerate}
+
+\subsection{Aufgabe 1.5}
+
+\begin{enumerate}[a)]
+    \item \begin{align}
+        \log_3 (x-1) &= 2 \\
+        x-1 &= 3^2 \\
+        x &= 10
+    \end{align}
+    \item \begin{align}
+        \log_2 x &= \log_3 x \\
+        2^{\log_3 x} &= x \\
+        (3^{\log_3 2})^{\log_3 x} &= x \\
+        (3^{\log_3 x})^{\log_3 2} &= x \\
+        x^{\log_3 2} &= x \\
+        x^{\log_3 2 - 1} &= 1 \\
+        x &= 1
+    \end{align}
+    \begin{itemize}
+        \item Die Lösung ist aus der Aufgabe schon ersichtlich, aber hier die Herleitung
+    \end{itemize}
+    \item \begin{align}
+        \lg(5x) + \lg 2 &= 3 - \lg(4x) \\
+        \lg(5x \cdot 2 \cdot 4x) &= 3 \\
+        \lg(40x^2) &= 3 \\
+        40x^2 &= 10^3 \\
+        4x^2 &= 10^2 \\
+        2x &= 10 \\
+        x &= 5
+    \end{align}
+    \item \begin{align}
+        (7^{x+1})^{x+2} &= (7^{x+2})^{x+5}s \\
+        7^{x^2+3x+2} &= 7^{x^2+7x+10} \\
+        x^2 + 3x + 2 &= x^2+7x+10 \\
+        -4x &= 8 \\
+        x &= -4
+    \end{align}
+    \item \begin{align}
+        \sqrt[3]{3^{x+6}} &= \sqrt[4]{3^{2x-2}} \\
+        3^{\frac{x+6}{3}} &= 3^{\frac{2x-2}{4}} \\
+        \frac{x}{3} + 2 &= \frac{x-1}{2} \\
+        -\frac{1}{6}x &= -\frac{5}{2} \\
+        x &= 15
+    \end{align}
+\end{enumerate}
+
+\subsection{Aufgabe 1.6}
+
+\begin{enumerate}[a)]
+    \item \[\prod_{n=1}^{j}(\sum_{k=1}^{j}n \cdot k) = (1 \cdot 1 + 
+    1 \cdot 2 ) \cdot (2 \cdot 1 + 2 \cdot 2)  \] 
+    für $j = 2$
+    \item \[\sum_{n=1}^{5}(\prod_{i=1}^{n} \frac{\sum_{k=1}^{3}k^3}{5^i}) = 
+    \sum_{n=1}^{5}(\prod_{i=1}^{n} \frac{1+8+27}{5^i}) =
+    \frac{36}{5} + \frac{36}{5}\frac{36}{25} + \frac{36}{5}\frac{36}{25}\frac{36}{125} + ... \]
+\end{enumerate}
+
+\subsection{Aufgabe 1.7}
+\begin{enumerate}[a)]
+    \item $\frac{3}{1}+\frac{5}{4}+\frac{9}{9}+\frac{17}{16}+...+\frac{1073741825}{900} = \sum_{k=1}^{30}\frac{2^k+1}{k^2}$
+    \item $\frac{2}{3}+\frac{4}{9}+\frac{6}{27}+\frac{8}{81}+...+\frac{18}{19683} = \sum_{k=1}^{9}\frac{2k}{3^k}$
+    \item $\frac{6}{1}\cdot\frac{9}{2}\cdot\frac{12}{3}\cdot...\cdot\frac{300}{99} = \prod_{k=1}^{99}\frac{3(k+1)}{k}$
+    \item $1 + \frac{1 \cdot 2}{1 \cdot 3} + \frac{1 \cdot 2 \cdot 3}{1 \cdot 3 \cdot 5} + ... + \frac{1\cdot 2\cdot 3\cdot ... \cdot 13}{1\cdot 3\cdot 5\cdot ... \cdot 25} = 
+    \sum_{k=1}^{13}\frac{\prod_{n=1}^{k}k}{\prod_{m=0}^{k-1}2k+1}$
+\end{enumerate}
+
+\subsection{Aufgabe 1.8}
+Erklärung des Ansatzes: \\
+Die letzte Aktion eines Kunden, bevor der Laden leer ist, ist die Mitnahme einer halben Kiste Bier.
+Da derselbe Kunde zuvor den halben Laden leergeräumt hat, war vor dem Kauf des letzten Kunden
+$\frac{1}{2} \cdot 2 = 1$ Kiste im Laden.
+
+Wir rechnen also rückwärts: der vorletzte Kunde baut auf dieser einen Kiste auf.
+Bevor er den Laden betreten hat, waren $(1 + \frac{1}{2}) \cdot 2 = 3$ Kisten im Laden.
+Diese Kette setzt sich immer so weiter. Der vorherige Wert $x$ wird immer durch $(x + \frac{1}{2}) \cdot 2$ neu berechnet.
+
+Kunden werden hier von hinten gezählt:
+\begin{itemize}
+    \item 1. Kunde: $(0 + \frac{1}{2}) \cdot 2 = 1$
+    \item 2. Kunde: $(1 + \frac{1}{2}) \cdot 2 = 3$
+    \item 3. Kunde: $(3 + \frac{1}{2}) \cdot 2 = 7$
+    \item 4. Kunde: $(7 + \frac{1}{2}) \cdot 2 = 15$
+    \item 5. Kunde: $(15 + \frac{1}{2}) \cdot 2 = 31$
+    \item ...
+\end{itemize}
+Die Anzahl der Verkäufe entspricht (Herleitung hier ausgelassen) $2^n-1$, wobei $n$ die Anzahl der Einkäufe ist. 
+Bsp. 5. Kunde, also $n = 5$: Anzahl Verkäufe $= 2^5-1 = 31$
+
+\subsection{Aufgabe 1.9}
+Erklärung des Ansatzes: \\
+Für den durschnittlichen Vebrauch einer Wohnung pro Tag brauchen wir den Gesamtverbrauch und die Gesamt-"Wohnungsverbrauchstage" in einem gegebenen Zeitraum (hier 12 Jahre, aber eigentlich egal).
+
+Zwei Wohnungen mit jeweils einem Tag Stromverbrauch ergeben zwei Wohnungsverbrauchstage insgesamt.
+In der Aufgabe kommt jeden Tag eine neue Wohnung zu den Verbrauchern hinzu. Die Gesamtzahl der Wohnungsverbrauchstage erhöht sich jeden Tag um die aktuelle Gesamtzahl fertiger Wohnungen.
+
+Die gesamten Wohnungsverbrauchstage ergeben sich also einfach aus der Summe natürlicher Zahlen bis 4380.
+$ GWVT = \sum_{k=1}^{4380}k$
+Beispielhafte Erläuterung (GWVT = Gesamtwohnungsverbrauchstage):
+\begin{itemize}
+    \item 1. Tag: 1 Wohnung (1 GWVT)
+    \item 2. Tag: 2 Wohnungen (1 + 2 GWVT)
+    \item 3. Tag: 3 Wohnungen (1 + 2 + 3 GWVT)
+    \item ...
+\end{itemize}
+Die Summe lässt sich durch die Gaußsche Summenformel schreiben als
+$ GWVT = \sum_{k=1}^{n}k = \frac{n^2+n}{2}$, mit n = 4380
+
+Der durchschnittliche Verbrauch einer Wohnung ergibt sich damit zu
+$$\frac{E_{gesamt}}{GWVT}$$
+
+
+\subsection{Aufgabe 1.10}
+Erklärung des Ansatzes: \\
+Angenommen, beide Streichen eine Wand der Fläche $A$ in der angegebenen Zeit. Wir beschreiben dann die Geschwindigkeiten der beiden mit $v_{paul} = \frac{A}{t_{paul}}$ und $v_{paula }= \frac{A}{t_{paula}}$
+Es gilt die Zeit zu finden, die beide zusammen für die Fläche $A$ benötigen. Also berechnen wir die Gesamtfläche von beiden in einer bestimmten Zeit.
+$$ A = t_{zeit} \cdot \frac{A}{t_{paul}} + t_{zeit} \cdot \frac{A}{t_{paula}} $$
+und setzen die errechnete Fläche mit der ausgedachten Gesamtfläche gleich (die beiden sind ja immer noch im selben Raum).
+Das $A$ taucht überall als Faktor auf und kann gekürzt werden. Nach Umstellung zur gesuchten $t_{zeit}$ ergibt sich:
+$$t_{zeit} = \frac{1}{\frac{1}{t_{paul}} + \frac{1}{t_{paula}}}$$
+
+\subsection{Aufgabe 1.11}
+Erklärung des Ansatzes: \\
+\begin{align}
+    1.5\, Huehner \cdot 1.5\, Tage &= 1.5 Eier \\
+    1.5\, Huehner &= 1 \frac{Eier}{Tage} \\
+    1\, Huhn &= \frac{2}{3} \frac{Eier}{Tage}
+\end{align}
+
+\subsection{Aufgabe 1.12}
+Erklärung des Ansatzes: \\
+Durchschnittsgeschwindigkeit ist einfach $\frac{Strecke_{gesamt}}{Zeit_{gesamt}}$
+
+\begin{enumerate}[a)]
+    \item \begin{align}
+        Strecke_{gesamt} &= 1 h \cdot 50 \frac{km}{h} + 1 h \cdot 100 \frac{km}{h} = 150 \\
+        Zeit_{gesamt} &= 1 h + 1 h = 2 h
+    \end{align}
+    \item \begin{align}
+        Strecke_{gesamt} &= 100 km + 100 km = 200 km \\
+        Zeit_{gesamt} &= \frac{100 km}{50 \frac{km}{h}} + \frac{100 km}{100 \frac{km}{h}} = 2 h + 1 h = 3 h
+    \end{align}
+\end{enumerate}
+
+\subsection{Aufgabe 1.13}
+Erklärung des Ansatzes: \\
+Sehr ähnlich zu dem Einkaufsladen-Problem. Zuvor gesagt: man kann einfach die Formeln nehmen und reinhauen, aber ich nehme einen anderen Ansatz. Die Annuitäten-Formel geht von Zinskosten VOR der Tilgung aus, ich in diesem Fall nicht. Wenn es doch so ist, kann man das Ergebnis einfach korrigieren (zeige ich gleich).
+
+Wieder rückwärts betrachtet: der Kontostand im letzten Jahr der Tilgung muss genauso hoch sein wie der jährliche Tilgungsbetrag, damit am Ende diesen Jahres die Schulden vollständig (unzwar genau) beglichen sind.
+
+Im vorletzten Jahr müssen dann Zinsen mit berücksichtigt werden. Nach der Tilgung und dem Zinsaufschlag müssen die Restschulden den Schulden im letzten Jahr entsprechen. Auch diese Rechnung kann immer so weitergeführt werden. 
+
+Beispiel für die Schulden im vorletzten Jahr:
+\begin{align}
+    (K_{2} - A) \cdot (1+q) &= K_{1} \\
+    K_{2} = \frac{K_{1}}{1+q} + A
+\end{align}
+
+Mit $K_{1} = A$ ergibt sich also $K_{2} = \frac{A}{1+q} + A$
+
+Hier die Bezeichnung der Variablen:
+
+\begin{align}
+    q &= Zinssatz\, pro\, Jahr \\
+    A &= Tilgungsbeitrag\, pro\, Jahr \\
+    n &= Anzahl\, Jahre \\
+    K_{i} &= Schulden\, im\, Jahr\, i,\, von\, hinten\, gezaehlt
+\end{align}
+
+Jedes Jahr wird der nächste Betrag durch $(1+q)$ dividiert und ein Tilgungsbeitrag addiert.
+Das Ganze lässt sich in einer Summe zusammenfassen.
+$$A \cdot \sum_{k=0}^{n} (1+q)^k $$
+Diese Summe ist eine geometrische Reihe, deren Wert folgendermaßen berechnet werden kann (Google):
+$$ \sum_{k=0}^{n} i^k = \frac{i^{n+1} - 1}{i - 1} $$
+Für unsere Summe ergibt sich also 
+$$ A \cdot \sum_{k=0}^{n}(1+q)^k = A \cdot \frac{(1+q)^{n+1}-1}{q}$$
+Um den Tilgungsbeitrag zu berechen, setzen wir das Ergebnis der Summe einfach mit dem anfänglichen Invest gleich (also die 100.000 Euro, hier Variable I) und erhalten
+$$A = I \cdot \frac{q}{q^{n+1}-1}$$
+Wenn nun die Zinskosten vor der Tilgung auftreten, muss von diesem Faktor einfach 1 abgezogen werden.
+
+
+
+\end{document}
