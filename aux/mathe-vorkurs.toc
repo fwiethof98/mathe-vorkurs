@@ -71,3 +71,35 @@
 \contentsline {subsection}{\numberline {3.11}Aufgabe 3.11}{23}{subsection.3.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.12}Aufgabe 3.12}{23}{subsection.3.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Übung 4}{24}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Aufgabe 4.1}{24}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Aufgabe 4.2}{24}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Übung 4}{24}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Aufgabe 4.3}{24}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Aufgabe 4.4}{24}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Übung 4}{24}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}Aufgabe 4.5}{24}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2}Aufgabe 4.6}{24}{subsection.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3}Aufgabe 4.7}{24}{subsection.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4}Aufgabe 4.8}{24}{subsection.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Übung 4}{24}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1}Aufgabe 4.9}{24}{subsection.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2}Aufgabe 4.10}{24}{subsection.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3}Aufgabe 4.11}{24}{subsection.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4}Aufgabe 4.12}{24}{subsection.7.4}%

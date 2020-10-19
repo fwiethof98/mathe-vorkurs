@@ -1,4 +1,4 @@
-# boot.py
+# bot.py
 import os
 import glob
 
