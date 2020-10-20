@@ -1,5 +1,0 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is './mathe-vorkurs.tex.blg'
-[99] biber-darwin:322> INFO - === Tue Oct 20, 2020, 16:31:05
-[286] Utils.pm:320> ERROR - Cannot find './mathe-vorkurs.tex.bcf'!
-[286] Biber.pm:132> INFO - ERRORS: 1

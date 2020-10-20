@@ -32,8 +32,8 @@ cleanup() {
     
     cp "$1.tex" "./backup/$1.tex"
 
-    if [ ! -d ./aux ]; then
-        mkdir aux
+    if [ ! -d ./auxiliary ]; then
+        mkdir auxiliary
     fi
     # cd aux
     # for file in $(find . -name "$1.*"); do
@@ -52,7 +52,7 @@ cleanup() {
     for name in ${all_aux[@]}; do
         files=$(find . -name "*.$name")
         for file in $files; do
-            mv $file "./aux/$file"
+            mv $file "./auxiliary/$file"
         done
     done
 }
@@ -77,8 +77,8 @@ if [ -d chapters ];then
     fi
 
     for file in $files; do
-        if [ -f "./aux/$file" ]; then
-            mv $file "./aux/$file"
+        if [ -f "./auxiliary/$file" ]; then
+            mv $file "./auxiliary/$file"
         fi
     done
 
