@@ -1,10 +1,30 @@
 \documentclass{standalone}
 \begin{document}
-    
-\subsection{Aufgabe 5.5}
 
+\subsection{Aufgabe 5.5}
+$$
+\sin(2x) \leq \sqrt{3}\sin x
+$$
+
+\begin{align}
+    2\sin x \cos x &\leq \sqrt{3} \sin x \\
+    2\cos x &\leq \sqrt{3} \vee x = k\pi \text{ mit } k\in \mathbb{N}\\
+    \cos x &\leq \frac{\sqrt{3}}{2} \vee x = k\pi \\
+    x &\geq +\arccos \frac{\sqrt{3}}{2} = \frac{\pi}{6} \wedge x\leq -\arccos \frac{\sqrt{3}}{2} = -\frac{\pi}{6} \vee x = k\pi \\
+    -\frac{\pi}{6}+k\pi &\leq x \leq \frac{\pi}{6}+k\pi \vee x = k\pi
+\end{align}
 
 \subsection{Aufgabe 5.6}
+$$ 5 \sin x - 2\cos^2 x = 1 $$
+
+\begin{align}
+    5 \sin x - 2(1-\sin^2 x) &= 1\\
+    2 \sin^2 x + 5 sin x - 3 &= 0\\
+    \sin^2 + \frac{5}{2} \sin x - \frac{3}{2} &= 0\\
+    y^2 + \frac{5}{2}y - \frac{3}{2} &= 0 \text{, mit } \sin x = y \\
+    y &= \frac{-5}{4} \pm \sqrt{\frac{49}{16}} \\
+    y_1 = \frac{-5}{4}+\frac{7}{4}=\frac{1}{2} &\vee y_2 = \frac{-5}{4} - \frac{7}{4} = -3
+\end{align}
 
 
 \end{document}
