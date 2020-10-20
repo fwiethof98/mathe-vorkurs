@@ -15,3 +15,8 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: mathe-vorkurs.tex
+
+      - uses: actions/upload-artifact@v2
+        with:
+            name: mathe-vorkurs.pdf
+            path: mathe-vorkurs.pdf
