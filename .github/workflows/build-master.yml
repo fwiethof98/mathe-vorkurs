@@ -1,0 +1,22 @@
+name: Build Master
+    
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build LaTeX
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: mathe-vorkurs.tex
+
+      - uses: actions/upload-artifact@v2
+        with:
+            name: mathe-vorkurs.pdf
+            path: mathe-vorkurs.pdf

@@ -1,10 +1,44 @@
 \documentclass{standalone}
 \begin{document}
-    
 \subsection{Aufgabe 5.3}
-
+Zu zeigen ist: $\sin(\arctan x) = \frac{x}{\sqrt{1+x^2}} $ \\
+\begin{align*}
+	\tan x &= \frac{\sin x}{\cos x} \\
+	\tan^2 x &= \frac{\sin^2x}{\cos^2 x} \\
+	\sin^2(\arctan x) &= \tan^2 (\arctan x) * \cos^2 (\arctan x) \\
+	&= x^2 * \cos^2 (\arctan x) \\
+	&= x^2 * (1 - \sin^2 (\arctan x))\\
+	&= x^2 * - x^2 \sin^2 (\arctan x) \\
+	x^2 \sin^2 (\arctan x) + \sin^2 (\arctan x) &= x^2 \\
+	\sin^2(\arctan x) * (1+x) &= x^2 \\
+	\sin^2 (\arctan x) &= \frac{x^2}{1+x} \\
+	\sin (\arctan x) &= \frac{x}{\sqrt{1+x}}\\
+	\checkmark
+\end{align*}
 
 \subsection{Aufgabe 5.4}
-
-
+\begin{enumerate}[a)]
+	\item Zu zeigen ist: $\cos x = \frac{1- \tan^2 (\frac{x}{2})}{1+\tan^2(\frac{x}{2})}$ \\
+	\begin{align*}
+		\frac{1- \tan^2 (\frac{x}{2})}{1+\tan^2(\frac{x}{2})} &= \frac{1-\frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}}{1+\frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}} \\
+		&= \frac{\frac{\cos^2(\frac{x}{2})}{\cos^2(\frac{x}{2})} - \frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}}{\frac{\cos^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}+\frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}} \\
+		&= \frac{\cos^2(\frac{x}{2})-\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})+\sin^2(\frac{x}{2})} \\
+		&= \frac{\cos(\frac{2x}{2})}{1} \> \text{(oben 2. Doppelwinkelformel und unten Satz des Pythagoras)} \\
+		&= \cos x \\ &\checkmark
+	\end{align*}
+	\item Zu zeigen ist: $\sin x = \frac{2\tan(\frac{x}{2})}{1+\tan^2(\frac{x}{2})}$
+	\begin{align*}
+		\frac{2\tan(\frac{x}{2})}{1+\tan^2(\frac{x}{2})} = \frac{2 \frac{sin(\frac{x}{2})}{\cos(\frac{x}{2})}}{\frac{\cos^2(\frac{x}{2})}{\cos^2(\frac{x}{2})} + \frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}} = \frac{2 \frac{sin(\frac{x}{2})*\cos(\frac{x}{2})}{\cos^2(\frac{x}{2})}}{\frac{\cos^2(\frac{x}{2})}{\cos^2(\frac{x}{2})} + \frac{\sin^2(\frac{x}{2})}{\cos^2(\frac{x}{2})}} \\
+		= \frac{2 \sin (\frac{x}{2}) \cos (\frac{x}{2})}{\cos^2 (\frac{x}{2}) + \sin^2 (\frac{x}{2})} \\
+		\text{(Oben 1. Doppelwinkelformel und unten wieder Satz des Pythagoras)} \Rightarrow  \sin x \\
+		\checkmark
+	\end{align*}
+	\item Zu zeigen ist: $\cos^4 x - \sin^4 x = \cos (2x)$
+	\begin{align*}
+		\text{3. Binomische Formel} \Rightarrow \\
+		\cos^4 x - \sin^4 x = (\cos^2 x+ \sin^2 x)(\cos^2x - \sin^2 x) &= \cos (2x) \\
+		\text{links Satz des Pythagoras und rechts 2. Doppelwinkelformel} &\Rightarrow 1 * \cos (2x) = \cos (2x) \\
+		\checkmark
+	\end{align*}
+\end{enumerate}
 \end{document}
