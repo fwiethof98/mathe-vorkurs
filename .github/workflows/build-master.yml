@@ -7,16 +7,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
       - name: Build LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           root_file: mathe-vorkurs.tex
-
       - uses: actions/upload-artifact@v2
         with:
-            name: mathe-vorkurs.pdf
+            name: mathe-vorkurs
             path: mathe-vorkurs.pdf
+
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/download-artifact@v2
+      with:
+        name: mathe-vorkurs
+    - run: |
+        wget https://syncandshare.lrz.de/client_deployment/LRZ_Sync_Share_Latest_amd64.deb
+        sudo dpkg -i LRZ_Sync_Share_Latest_amd64.deb
+        ls -l
