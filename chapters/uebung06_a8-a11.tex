@@ -1,0 +1,99 @@
+\documentclass{standalone}
+\begin{document}
+
+\subsection{Aufgabe 6.8}
+\begin{enumerate}
+    \item $\begin{pmatrix}
+        A = 0
+    \end{pmatrix}$
+    \item Einfach die Matrix aus Aufgabe 6.11 nehmen und einen beliebigen Winkel einsetzen. Allgemein gilt: $AA^{-1} = I_n$, mit $A \in \mathbb{R}^{3 \bigtimes 3}$. Für die Matrix in Aufgabe 6.11 gilt speziell: $A^{-1}=A^T$
+\end{enumerate}
+    
+\subsection{Aufgabe 6.9}
+\begin{enumerate}[a)]
+    \item $A = \begin{pmatrix}
+        0 & 0 \\
+        0 & 1
+    \end{pmatrix}\text{ ; }
+    B = \begin{pmatrix}
+        1 & 1 \\
+        0 & 0
+    \end{pmatrix}
+    $
+    \item \begin{align}
+        A &= \begin{pmatrix}
+            0 & 2 & 4 \\
+            0 & 0 & 1 \\
+            0 & 0 & 0
+        \end{pmatrix}\\
+        A^2 &= \begin{pmatrix}
+            0 & 0 & 2 \\
+            0 & 0 & 0 \\
+            0 & 0 & 0
+        \end{pmatrix} \\
+        A^3 &= 0
+    \end{align}
+    \item \begin{align}
+        B &= \begin{pmatrix}
+            0 & 0 & 0 \\
+            \frac{1}{2} & 0 & 0 \\
+            3 & 0 & 0
+        \end{pmatrix}\\
+        B^2 &= 0
+    \end{align}
+\end{enumerate}
+
+\subsection{Aufgabe 6.10}
+\begin{enumerate}[a)]
+    \item Beispiel: $\vec{v} = (v_1, v_2)^T$. Dann ist $\begin{pmatrix}
+        3 & 0 \\
+        0 & 3
+    \end{pmatrix}
+    = (3v_1, 3_v2)$\\
+    Die Einträge des Vektors werden verdreifacht, der Vektor damit in derselben Richtung auf sein Dreifaches verlängert.
+    \item Die Koordinaten seiner Punkte halbieren sich, somit auch seine Kantenlängen.
+    \item Spiegelung an der x-Achse bedeutet $x_2 = x_1$ und $y_2 = -y_1$. Damit ergibt sich $C = \begin{pmatrix}
+        1 & 0 \\
+        0 & -1
+    \end{pmatrix}$
+\end{enumerate}
+
+\subsection{Aufgabe 6.11}
+
+\begin{enumerate}[a)]
+    \item \begin{align}
+        A(\phi)A(\phi)^T &= \begin{pmatrix}
+            \cos \phi & -\sin \phi \\
+            \sin \phi & \cos \phi
+        \end{pmatrix}
+        \begin{pmatrix}
+            \cos \phi & \sin \phi \\
+            -\sin \phi & \cos \phi
+        \end{pmatrix}
+        \\ &= 
+        \begin{pmatrix}
+            \cos^2 \phi + \sin^2 \phi & \cos \phi \sin \phi - \sin \phi \cos \phi \\
+            \sin \phi \cos \phi - \cos \phi \sin \phi & \sin^2 \phi + \cos^2 \phi
+        \end{pmatrix}
+        \\ &=
+        \begin{pmatrix}
+            1 & 0 \\
+            0 & 1
+        \end{pmatrix}
+        \\ &= I_2
+    \end{align}
+    \item Sie dreht den Punkt um $\phi$ um den Koordinatenursprung, gegen den Uhrzeigersinn.
+    \item \begin{align}
+        A(\phi)A(\theta) &= \begin{pmatrix}
+            \cos \phi \cos \theta -\sin \phi \sin \theta & -\cos \phi \sin \theta - \sin \phi \cos \theta \\
+            \sin \phi \cos \theta +\sin \phi \cos \theta & -\sin \phi \sin \theta + \cos \phi \cos \theta
+        \end{pmatrix}
+        \\ &= \begin{pmatrix}
+            \cos (\phi + \theta) & -\sin (\phi + \theta) \\
+            \sin (\phi + \theta) & \cos (\phi + \theta)
+        \end{pmatrix}
+        \\ &= A(\phi + \theta)
+    \end{align}
+\end{enumerate}
+
+\end{document}
