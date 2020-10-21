@@ -2,5 +2,65 @@
 \begin{document}
 
 \subsection{Aufgabe 6.7}
+\begin{enumerate}[a)]
+
+\item
+    \begin{align*}
+        A^T = \left(\begin{array}{rrr}
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        0 & 0 & 1 \\
+        \end{array}\right) = A \\
+    \end{align*}
+
+\item
+    Rechts:
+    \begin{align*}
+        A^TA &= \left(\begin{array}{rrr}
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        0 & 0 & 1 \\
+        \end{array}\right)\left(\begin{array}{rrr}
+        0 & 1 & 0 \\
+        1 & 0 & 0 \\
+        0 & 0 & 1 \\
+        \end{array}\right) \\
+        &= \left(\begin{array}{rrr}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+        \end{array}\right) \\
+        &= I_3 \\
+    \end{align*}
+
+    Links:
+    \begin{align*}
+        B^TB &= \left(\frac{1}{9}\right)\left(\begin{array}{rrr}
+        7 & 4 & -4 \\
+        4 & 1 & 8 \\
+        4 & -8 & -1 \\
+        \end{array}\right)\left(\frac{1}{9}\right)\left(\begin{array}{rrr}
+        7 & 4 & 4 \\
+        4 & 1 & -8 \\
+        -4 & 8 & -1 \\
+        \end{array}\right) \\
+        &= \frac{1}{81}\left(\begin{array}{rrr}
+        81 & 0 & 0 \\
+        0 & 81 & 0 \\
+        0 & 0 & 81 \\
+        \end{array}\right) \\
+        &= \left(\begin{array}{rrr}
+        1 & 0 & 0 \\
+        0 & 1 & 0 \\
+        0 & 0 & 1 \\
+        \end{array}\right) \\
+        &= I_3 \\
+    \end{align*}
+
+    \begin{align*}
+        \therefore B^TB=A^TA
+    \end{align*}
+
+\end{enumerate}
 
 \end{document}
