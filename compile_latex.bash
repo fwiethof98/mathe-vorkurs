@@ -85,4 +85,6 @@ if [ -d chapters ];then
     cd ../
 fi
 
+pdf_file=$(find . -maxdepth 1 -name "*.pdf")
+cp $pdf_file /media/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/$pdf_file
 python3 bot.py
