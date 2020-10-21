@@ -19,3 +19,5 @@
 *.tlg
 *.toc
 *_temp.tex
+.DS_Store
+*.swp
