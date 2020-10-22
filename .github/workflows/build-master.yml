@@ -38,4 +38,6 @@ jobs:
         sudo apt-get install davfs2
         mkdir dav
         sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
+        ls -l dav
+        ls -l dav/*
         cp mathe-vorkurs.pdf dav/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
