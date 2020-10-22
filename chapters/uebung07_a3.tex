@@ -1,5 +1,68 @@
 \documentclass{standalone}
+
 \begin{document}
+
 \subsection{Aufgabe 7.3}
 
+
+Sei B= $\begin{pmatrix}
+	 a & b \\
+	  c & d 
+	\end{pmatrix}$ mit $ad-bc \neq 0$.\\
+Ferner sei $C=\frac{1}{ad-bc}$
+
+$\begin{pmatrix}
+	d &-b \\
+	-c & d 
+\end{pmatrix}$\\ 
+ Zeigen Sie: \\
+\begin{itemize}
+	
+	\item[a)]
+   CB=$I_2$;\\
+   CB=$\frac{1}{ad-bc}
+	\begin{pmatrix}
+		d & -b \\
+		-c & d 
+	\end{pmatrix}
+	\begin{pmatrix}
+		a & b \\
+		c & d 
+	\end{pmatrix}=
+	\begin{pmatrix}
+		da-bc & db-bd \\
+		-ca+ca & -cb+ad 
+	\end{pmatrix}
+	\frac{1}{ad-bc}=
+	\begin{pmatrix}
+		1 & 0 \\
+		0 & 1 
+	\end{pmatrix}$
+	
+	\item[b)]
+   BC=$I_2$\\
+   BC=
+	$\begin{pmatrix}
+		a & b \\
+		c & d 
+	\end{pmatrix},
+	\frac{1}{ad-bc}
+	\begin{pmatrix}
+		d & -b \\
+		-c & d
+	\end{pmatrix}=
+	\begin{pmatrix}
+		ad-bc & -ab+ab \\
+		cd-cd & -bc+da 
+	\end{pmatrix}
+	\frac{1}{ad-bc}=
+	\begin{pmatrix}
+		1 & 0 \\ 0 & 1 
+	\end{pmatrix} 
+	\begin{pmatrix}
+		1 & 0 \\
+		0 & 1 
+	\end{pmatrix}$
+	
+\end{itemize}
 \end{document}
