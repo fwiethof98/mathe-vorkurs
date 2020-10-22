@@ -13,7 +13,7 @@ jobs:
           ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
       - name: Install LaTeX build environment
         run: |
-          sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra latexmk
+          sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra texlive-science latexmk
       - name: Build LaTeX document
         run: |
           latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode mathe-vorkurs.tex
