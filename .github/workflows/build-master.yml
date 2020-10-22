@@ -9,8 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Build LaTeX
-        uses: xu-cheng/latex-action@v2
+      - run: |
+          ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
+      - uses: xu-cheng/latex-action@v2
         with:
           root_file: mathe-vorkurs.tex
       - uses: actions/upload-artifact@v2
