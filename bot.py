@@ -7,9 +7,12 @@ import discord
 from discord.message import Attachment
 
 load_dotenv()
-
-TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
+try:
+    TOKEN = os.getenv('DISCORD_TOKEN')
+    TOKEN = os.getenv('DISCORD_GUILD')
+except:
+    TOKEN = os.environ['DISCORD_TOKEN']
+    GUILD = os.environ['DISCORD_GUILD']
 
 client = discord.Client()
 

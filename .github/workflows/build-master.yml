@@ -24,6 +24,8 @@ jobs:
     env:
       SAS_USER: ${{ secrets.SYNC_AND_SHARE_USER }}
       SAS_PASS: ${{ secrets.SYNC_AND_SHARE_PASS }}
+      SAS_PASS: ${{ secrets.DISCORD_TOKEN }}
+      SAS_PASS: ${{ secrets.DISCORD_GUILD }}
     steps:
     - uses: actions/download-artifact@v2
       with:
