@@ -19,16 +19,13 @@ jobs:
             name: mathe-vorkurs
             path: mathe-vorkurs.pdf
 
-  publish:
+  publish-sync-and-share:
     runs-on: ubuntu-latest
     needs: build
     env:
       SAS_USER: ${{ secrets.SYNC_AND_SHARE_USER }}
       SAS_PASS: ${{ secrets.SYNC_AND_SHARE_PASS }}
-      DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-      DISCORD_GUILD: ${{ secrets.DISCORD_GUILD }}
     steps:
-    - uses: actions/checkout@v2
     - uses: actions/download-artifact@v2
       with:
         name: mathe-vorkurs
@@ -39,6 +36,18 @@ jobs:
         mkdir dav
         sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
         cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
+        
+  publish-discord:
+    runs-on: ubuntu-latest
+    needs: build
+    env:
+      DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+      DISCORD_GUILD: ${{ secrets.DISCORD_GUILD }}
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/download-artifact@v2
+      with:
+        name: mathe-vorkurs
     - name: Upload to Discord
       run: |
         sudo apt-get install python3-setuptools
