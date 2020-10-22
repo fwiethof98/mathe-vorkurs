@@ -1,39 +1,45 @@
-\documentclass{article}
-\usepackage{geometry}
-\usepackage{color}
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage[hidelinks]{hyperref}
-\usepackage{chngcntr}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage[symbols,nogroupskip,automake,nomain]{glossaries-extra}
-\glstocfalse
-\usepackage{fancyhdr}
-\usepackage[toc,page]{appendix}
-\usepackage{imakeidx}
-\usepackage[backend=biber,style=apa]{biblatex}
-\usepackage[shortlabels]{enumitem}
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx}
-\graphicspath{{img/}}
-\usepackage{placeins}
-\usepackage{standalone}
-\usepackage{multicol}
-\usepackage{tikz}
-\usepackage{tabularx}
-\usepackage{mathabx}
+\begin{titlepage}
+	\vspace*{\fill}
+	\begin{center}
+		\color{gray}\line(1,0){300} \\
+		\color{black}
+		\vspace{1cm}
+
+		\huge{\bfseries Lösungsvorschläge zum Mathe-Vorkurs EI} \\
+		[0.15in]
+		\color{gray}\line(1,0){200} \\
+		\color{black}
+
+		\vspace{0.5cm}
+		\begin{minipage}{8cm}
+			\begin{center}
+				\large{Keine Garantie, Eltern haften für ihre Kinder}
+			\end{center}
+		\end{minipage}	
+	\end{center}
+	\vspace*{\fill}
+	\vspace{3cm}
+	
+	\begin{flushright}
+		Florian Wiethof \\
+		O\u{g}uz Duran \\
+		Fatih Gen\c{c} \\
+		Silas Jerowsky \\
+		Tobias Weingarten \\
+		Janis Heims \\
+		Felix Schlosser
+		\today, Munich
+	\end{flushright}
+\end{titlepage}
 
 
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\abs}[1]{\lvert#1\rvert}
-\renewcommand{\contentsname}{Inhaltsverzeichnis}
 
+\pagenumbering{roman}
+\tableofcontents
+\addtocontents{toc}{
+\protect\thispagestyle{empty}}
+\thispagestyle{empty}
+\clearpage
+\setcounter{page}{1}
 
-\pagestyle{fancy}
-
-\makeindex
-
-\newglossary[tlg]{words}{tld}{tdn}{Words}
-\makeglossaries
-
+\pagenumbering{arabic}
