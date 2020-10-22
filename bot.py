@@ -2,17 +2,11 @@
 import os
 import glob
 
-from dotenv import load_dotenv
 import discord
 from discord.message import Attachment
 
-load_dotenv()
-try:
-    TOKEN = os.getenv('DISCORD_TOKEN')
-    GUILD = os.getenv('DISCORD_GUILD')
-except:
-    TOKEN = os.environ['DISCORD_TOKEN']
-    GUILD = os.environ['DISCORD_GUILD']
+TOKEN = os.environ['DISCORD_TOKEN']
+GUILD = os.environ['DISCORD_GUILD']
 
 client = discord.Client()
 
