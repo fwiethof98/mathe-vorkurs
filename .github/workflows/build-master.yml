@@ -11,9 +11,12 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
-      - uses: xu-cheng/latex-action@v2
-        with:
-          root_file: mathe-vorkurs.tex
+      - name: Install LaTeX build environment
+        run: |
+          sudo apt-get install texlive latexmk
+      - name: Build LaTeX document
+        run: |
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode mathe-vorkurs.tex
       - uses: actions/upload-artifact@v2
         with:
             name: mathe-vorkurs
@@ -35,6 +38,7 @@ jobs:
         echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
         mkdir dav
         sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
+        ls -l dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/
         cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
         
   publish-discord:
