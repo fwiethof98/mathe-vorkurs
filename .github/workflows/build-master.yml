@@ -21,14 +21,19 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     needs: build
+    env:
+      SAS_USER: ${{ secrets.SYNC_AND_SHARE_USER }}
+      SAS_PASS: ${{ secrets.SYNC_AND_SHARE_PASS }}
     steps:
     - uses: actions/download-artifact@v2
       with:
         name: mathe-vorkurs
     - run: |
-        pwd
-        ls -l
+        sudo mkdir -p /etc/davfs2/
+        sudo touch /etc/davfs2/secrets
+        echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
+        sudo chmod 600 /etc/davfs2/secrets
         sudo apt-get install davfs2
-        sudo mkdir /mnt/dav
-        sudo mount -t davfs -o noexec https://syncandshare.lrz.de/webdav /mnt/dav/
-        ls -l /mnt/dav
+        mkdir dav
+        sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
+        cp mathe-vorkurs.pdf dav/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
