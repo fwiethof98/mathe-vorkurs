@@ -35,20 +35,9 @@ cleanup() {
     if [ ! -d ./auxiliary ]; then
         mkdir auxiliary
     fi
-    # cd aux
-    # for file in $(find . -name "$1.*"); do
-    #     cp ../$file $file
-    #     rm ../$file
-    # done
+  
 
-    # if [ -f "$1.pdf" ]; then
-    #     for file in "$1.pdf"; do
-    #         mv "$file" "../$file"
-    #     done
-    # fi
-    # cd ..
-
-    rm -r ./aux/*
+    rm -r ./auxiliary/*
     for name in ${all_aux[@]}; do
         files=$(find . -name "*.$name")
         for file in $files; do
@@ -73,7 +62,7 @@ if [ -d chapters ];then
     files=$(find . -name "*.aux")
 
     if [ ! -d aux ]; then
-        mkdir aux
+        mkdir auxiliary
     fi
 
     for file in $files; do
