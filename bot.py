@@ -1,4 +1,4 @@
-# bot.py file
+# bot.py
 import os
 import glob
 
