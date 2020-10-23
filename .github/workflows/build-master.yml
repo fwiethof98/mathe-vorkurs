@@ -14,11 +14,19 @@ jobs:
       DISCORD_GUILD: ${{ secrets.DISCORD_GUILD }}
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
-      - name: Install LaTeX build environment
+      - name: Mount Sync+Share
+        continue-on-error: true
+        run: |
+          sudo apt-get install davfs2
+          echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
+          mkdir dav
+          sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
+      - name: Install build environment
         run: |
           sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra latexmk biber
+      - name: Set up build
+      - run: |
+          ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
       - name: Build LaTeX document
         run: |
           latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode mathe-vorkurs.tex
@@ -29,11 +37,7 @@ jobs:
       - name: Upload to Sync+Share
         continue-on-error: true
         run: |
-          sudo apt-get install davfs2
-          echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
-          mkdir dav
-          sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
-          sudo cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.:  
+          cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
       - name: Upload to Discord
         continue-on-error: true
         run: |
