@@ -25,7 +25,7 @@ jobs:
         run: |
           sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra latexmk biber
       - name: Set up build
-      - run: |
+        run: |
           ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
       - name: Build LaTeX document
         run: |
