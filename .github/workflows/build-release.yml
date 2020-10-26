@@ -10,13 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - env:
-          A: ${{ github.event.release.release_id }}
-          B: ${{ github.event.release }}
-          C: ${{ github.event }}
+          VAR_A: ${{ github.event.release.release_id }}
+          VAR_B: ${{ github.event.release }}
+          VAR_C: ${{ github.event }}
         run: |
-          echo $A
-          echo $B
-          echo $C
+          echo $VAR_A
+          echo $VAR_B
+          echo $VAR_C
       - name: Mount Sync+Share
         continue-on-error: true
         env:
