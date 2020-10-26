@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - env:
-          VAR_A: ${{ github.event.release.release_id }}
+          VAR_A: ${{ toJSON(github.event) }}
         run: |
           echo $VAR_A
       - name: Mount Sync+Share
