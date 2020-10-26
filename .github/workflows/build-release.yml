@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - env:
-          VAR_A: ${{ toJSON(github.event) }}
-        run: |
-          echo $VAR_A
       - name: Mount Sync+Share
         continue-on-error: true
         env:
@@ -41,7 +37,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ format('https://uploads.github.com/repos/fwiethof98/mathe-vorkurs/releases/{0}/assets{{?name,label}}', github.event.release.release_id) }}
+          upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./mathe-vorkurs.pdf
           asset_name: mathe-vorkurs.pdf
           asset_content_type: application/pdf
