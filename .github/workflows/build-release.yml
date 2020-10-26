@@ -9,6 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - env:
+          A: ${{ github.event.release.release_id }}
+          B: ${{ github.event.release }}
+          C: ${{ github.event }}
+        run: |
+          echo $A
+          echo $B
+          echo $C
       - name: Mount Sync+Share
         continue-on-error: true
         env:
