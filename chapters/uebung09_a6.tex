@@ -1,6 +1,28 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 9.6}
-
-
+\begin{enumerate}[a)]
+\item \begin{align} 
+f(x) = cos^2x &= \frac{1+cos(2x)}{2} \\
+&= \frac{1}{2} + \frac{cos(2x)}{2} \\
+\Rightarrow F(x) &= \frac{x}{2} + \frac{1}{4} sin(2x) + c, c \in \mathbb{R}
+\end{align}
+\item \begin{align}
+f(x) = sin^2x &= \frac{1-cos(2x)}{2} \\
+&= \frac{1}{2} - \frac{cos(2x}{2} \\
+\Rightarrow F(x) &= \frac{x}{2} - \frac{1}{4} sin(2x) + c, c \in \mathbb{R}
+\end{align}
+\item \begin{align}
+\int x^4 e^x dx &= \begin{vmatrix} \label{eq:partielle-integration}
+f'(x) = e^x & f(x) = e^x \\
+g(x) = x^4 & g'(x) = 4x^3
+\end{vmatrix} \\
+&= x^4 e^x - \int 4x^3 e^x dx \\ 
+\text{Partielle Integration wie in Gleichung ~\ref{eq:partielle-integration}: }
+&= x^4 - 4x^3 e^x + \int 12 x^2 e^x dx \\
+&= x^4 e^x - 4x^3 e^x + 12 x^2 e^x + \int 24 x e^x dx \\
+&= x^4 e^x - 4x^3 e^x + 12 x^2 e^x - 24x e^x + 24 e^x 
+\end{align}
+Wenn man diesen Term ableitet, dann kürzen sich alle Summanden durch die Produktregel bis auf $x^4 e^x$ raus.
+\end{enumerate}
 \end{document}
