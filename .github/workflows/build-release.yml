@@ -5,15 +5,10 @@ on:
     types: [ released ]
 
 jobs:
-  build-and-publish:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Test
-        env:
-          REF: ${{ github.ref }}
-        run: |
-          echo $REF
       - name: Mount Sync+Share
         continue-on-error: true
         env:
@@ -37,6 +32,13 @@ jobs:
         with:
           name: mathe-vorkurs
           path: mathe-vorkurs.pdf
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: https://uploads.github.com/repos/fwiethof98/mathe-vorkurs/releases/latest/assets{?name,label}
+          asset_path: ./mathe-vorkurs.pdf
+          asset_name: mathe-vorkurs.pdf
+          asset_content_type: application/pdf
       - name: Upload to Sync+Share
         continue-on-error: true
         run: |
