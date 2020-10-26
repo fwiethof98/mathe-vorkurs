@@ -1,0 +1,40 @@
+\documentclass{standalone}
+\begin{document}
+\subsection{Aufgabe 9.7}
+
+\begin{enumerate}[a)]
+    \item \begin{align}
+        \int f(x) &= \int \tan x dx \\
+        F(x) &= \int \tan x  dx \\
+        &= \int \frac{\sin x}{\cos x} dx \\
+        &= \int -\frac{1}{u} du \text{, mit } u = cos x, du = -sin x dx \\
+        &= -\int \frac{1}{u} du \\
+        &= - (\ln u + c) \\
+        &= \ln \frac{1}{u} - c \text{, u einsetzen} \\
+        &= \ln \frac{1}{\sin x} - c
+    \end{align}
+    \item \begin{align}
+        \int f(x) &= \int xe^{-x^2} dx \\
+        F(x) &= \int xe^{-x^2} dx \\
+        &= \int -\frac{1}{2}e^{u} du \text{, mit } u = -x^2, du = -2x \\
+        &= -\frac{1}{2} \int e^{u} du \\
+        &= -\frac{1}{2} (e^{u} + c) \text{, u einsetzen} \\
+        &= -\frac{1}{2} (e^{-x^2} + c)
+    \end{align}
+    \item \begin{align}
+        \int f(x) &= \int e^{\sqrt{2x+1}} dx \\
+        F(x) = &= \int e^{\sqrt{2x+1}} dx\\
+        &= \int 2e^{u}u du \text{, mit } u = \sqrt{2x+1}, dx = {2\sqrt{2x+1} du
+        &= 2 \cdot ( \left[ e^{u}u \right] - \int e^{u} du + c_1) \\
+        &= 2 \cdot ( \left[ e^{u}u \right] - e^{u} + c_2) \text{, u einsetzen} \\
+        &= 2 \cdot (e^{u}u - e^{u} + c_2)
+    \end{align}
+    % \item \begin{align}
+    %     g'(x) &= (\tan \frac{x}{2})' \\
+    %     &= (\frac{\sin \frac{x}{2}}{\cos \frac{x}{2}})' \\
+    %     &= (-\sin^2)
+    % \end{align}
+\end{enumerate}
+
+
+\end{document}
