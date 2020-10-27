@@ -1,6 +1,68 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 10.4}
+\begin{enumerate}[i)]
+\item
+    \begin{align*}
+        f &= \sin(x) + \sin(y),\ (x,y)^T \in [0,2\pi] \times [0,2\pi] \\
+        f_x &= \cos(x) \\
+        f_y &= \cos(y) \\
+        f_{xx} &= -\sin(x) \\
+        f_{yy} &= -\sin(y) \\
+        f_{xy} &= 0 \\
+        f_{yx} &= 0 \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        & \left\{ (a \in \mathbb{R}, b \in \mathbb{R}) \mid f_x(a,b) = 0 \wedge f_y(a,b) = 0 \right\} \\
+        & \left\{ (a \in \mathbb{R}, b \in \mathbb{R}) \mid \cos(a) = 0 \wedge \cos(y) = 0 \right\} \\
+        & \left\{ (a \in \mathbb{R}, b \in \mathbb{R}) \mid a \in \left\{ \frac{\pi}{2}, \frac{\pi}{2} \right\} \wedge b \in \left\{ \frac{\pi}{2}, \frac{\pi}{2} \right\} \right\} \\
+        & \left\{ \left(\frac{\pi}{2}, \frac{\pi}{2}\right), \left(\frac{\pi}{2}, \frac{3\pi}{2}\right), \left(\frac{3\pi}{2}, \frac{\pi}{2}\right), \left(\frac{3\pi}{2}, \frac{3\pi}{2}\right) \right\} \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        H\left(\frac{\pi}{2}, \frac{\pi}{2}\right) &= \left(-\sin\left(\frac{\pi}{2}\right)\right)\left(-\sin\left(\frac{\pi}{2}\right)\right)-(0)(0) = 1 > 0\ \therefore \text{lokale Extreme} \\
+        H\left(\frac{\pi}{2}, \frac{3\pi}{2}\right) &= \left(-\sin\left(\frac{\pi}{2}\right)\right)\left(-\sin\left(\frac{3\pi}{2}\right)\right)-(0)(0) = -1 < 0 \\
+        H\left(\frac{3\pi}{2}, \frac{\pi}{2}\right) &= \left(-\sin\left(\frac{3\pi}{2}\right)\right)\left(-\sin\left(\frac{\pi}{2}\right)\right)-(0)(0) = -1 < 0 \\
+        H\left(\frac{3\pi}{2}, \frac{3\pi}{2}\right) &= \left(-\sin\left(\frac{3\pi}{2}\right)\right)\left(-\sin\left(\frac{3\pi}{2}\right)\right)-(0)(0) = 1 > 0\ \therefore \text{lokale Extreme} \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        S\left(\frac{\pi}{2}, \frac{\pi}{2}\right) &= \left(-\sin\left(\frac{\pi}{2}\right)\right) + \left(-\sin\left(\frac{\pi}{2}\right)\right) = -2 < 0\ \therefore \text{lokales Maximum} \\
+        S\left(\frac{3\pi}{2}, \frac{3\pi}{2}\right) &= \left(-\sin\left(\frac{3\pi}{2}\right)\right) + \left(-\sin\left(\frac{3\pi}{2}\right)\right) = 2 > 0\ \therefore \text{lokales Minimum} \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        f\left(\frac{\pi}{2}, \frac{\pi}{2}\right) &= 2 \\
+        f\left(\frac{3\pi}{2}, \frac{3\pi}{2}\right) &= -2 \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        & f(x, 0) = \sin(x),\ f'(x, 0) = \cos(x),\ f''(x, 0) = -\sin(x) \\
+        & \therefore\ \text{lokales maximum bei}\ f\left(\frac{\pi}{2}, 0\right) = 1,\ \text{lokales minimum bei}\ f\left(\frac{3\pi}{2}, 0\right) = -1 \\
+        & f(x, 2\pi) = \sin(x),\ f'(x, 2\pi) = \cos(x),\ f''(x, 2\pi) = -\sin(x) \\
+        & \therefore\ \text{lokales maximum bei}\ f\left(\frac{\pi}{2}, 2\pi\right) = 1,\ \text{lokales minimum bei}\ f\left(\frac{3\pi}{2}, 2\pi\right) = -1 \\
+        & f(0, y) = \sin(y),\ f'(0, y) = \cos(y),\ f''(0, y) = -\sin(y) \\
+        & \therefore\ \text{lokales maximum bei}\ f\left(0, \frac{\pi}{2}\right) = 1,\ \text{lokales minimum bei}\ f\left(0, \frac{3\pi}{2}\right) = -1 \\
+        & f(2\pi, y) = \sin(y),\ f'(2\pi, y) = \cos(y),\ f''(2\pi, y) = -\sin(y) \\
+        & \therefore\ \text{lokales maximum bei}\ f\left(2\pi, \frac{\pi}{2}\right) = 1,\ \text{lokales minimum bei}\ f\left(2\pi, \frac{3\pi}{2}\right) = -1 \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        f(0, 0) = 0, \ f(0, 2\pi) = 0, \ f(2\pi, 0) = 0, \ f(2\pi, 2\pi) = 0 \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        & \text{Das globale Maximum ist}\ f\left(\frac{\pi}{2}, \frac{\pi}{2}\right) = 2 \\
+        & \text{Das globale Minimum ist}\ f\left(\frac{3\pi}{2}, \frac{3\pi}{2}\right) = -2 \\
+    \end{align*}
+
+\end{enumerate}
 \end{document}
