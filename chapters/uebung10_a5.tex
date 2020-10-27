@@ -1,0 +1,59 @@
+\documentclass{standalone}
+\begin{document}
+\subsection{Aufgabe 10.5}
+
+$$ f(x,y) = y^4 - 3xy^2 + x^3 $$
+
+\begin{align}
+    \begin{pmatrix}
+        \frac{df}{dx} \\
+        \frac{df}{dy}
+    \end{pmatrix}
+    &= \vec{0}\\
+    \begin{pmatrix}
+        -3y^2 + 3x^2 \\
+        4y^3 - 6xy
+    \end{pmatrix}
+    &= \begin{pmatrix}
+        0 \\
+        0
+    \end{pmatrix} \\
+    \begin{pmatrix}
+        x^2 \\
+        4y^2
+    \end{pmatrix}
+    &= \begin{pmatrix}
+        y^2 \\
+        6x
+    \end{pmatrix}
+    \begin{matrix}
+        \\
+        \vee y = 0
+    \end{matrix} \\
+    \begin{pmatrix}
+        x^2 \\
+        4x^2 - 6x 
+    \end{pmatrix}
+    =& \begin{pmatrix}
+        y^2 \\
+        0
+    \end{pmatrix}
+    \begin{matrix}
+        \\
+        \vee y = 0
+    \end{matrix} \\
+\end{align}
+
+\begin{align}
+    4x^2 - 6 x &= 0 \\
+    x^2 - \frac{3}{2} x &= 0 \\
+    x - \frac{3}{2} &= 0 \vee x = 0 \\
+    x &= \frac{3}{2} \vee x = 0
+\end{align}
+
+Lokale Extreme liegen bei:
+\begin{align}
+    (x,y) &= (0,0)
+\end{align}
+
+\end{document}
