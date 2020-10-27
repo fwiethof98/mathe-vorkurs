@@ -1,0 +1,47 @@
+name: Build Release
+    
+on:
+  release:
+    types: [ published ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Mount Sync+Share
+        continue-on-error: true
+        env:
+          SAS_USER: ${{ secrets.SYNC_AND_SHARE_USER }}
+          SAS_PASS: ${{ secrets.SYNC_AND_SHARE_PASS }}
+        run: |
+          sudo apt-get install davfs2
+          echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
+          mkdir dav
+          sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
+      - name: Install build environment
+        run: |
+          sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra latexmk biber
+      - name: Set up build
+        run: |
+          ls chapters/*.tex | awk '{printf "\\input{%s}\n", $1}' > _chapters.tex
+      - name: Build LaTeX document
+        run: |
+          latexmk -pdf -file-line-error -halt-on-error -interaction=nonstopmode mathe-vorkurs.tex
+      - uses: actions/upload-artifact@v2
+        with:
+          name: mathe-vorkurs
+          path: mathe-vorkurs.pdf
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./mathe-vorkurs.pdf
+          asset_name: mathe-vorkurs.pdf
+          asset_content_type: application/pdf
+      - name: Upload to Sync+Share
+        continue-on-error: true
+        run: |
+          cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.

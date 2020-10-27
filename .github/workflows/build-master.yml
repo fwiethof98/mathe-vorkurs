@@ -8,19 +8,10 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     env:
-      SAS_USER: ${{ secrets.SYNC_AND_SHARE_USER }}
-      SAS_PASS: ${{ secrets.SYNC_AND_SHARE_PASS }}
       DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
       DISCORD_GUILD: ${{ secrets.DISCORD_GUILD }}
     steps:
       - uses: actions/checkout@v2
-      - name: Mount Sync+Share
-        continue-on-error: true
-        run: |
-          sudo apt-get install davfs2
-          echo "https://syncandshare.lrz.de/webdav" "$SAS_USER" "$SAS_PASS" | sudo tee -a /etc/davfs2/secrets
-          mkdir dav
-          sudo mount -t davfs -o rw,user,noexec,uid=$USER https://syncandshare.lrz.de/webdav ./dav/
       - name: Install build environment
         run: |
           sudo apt-get install texlive texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra latexmk biber
@@ -34,10 +25,6 @@ jobs:
         with:
           name: mathe-vorkurs
           path: mathe-vorkurs.pdf
-      - name: Upload to Sync+Share
-        continue-on-error: true
-        run: |
-          cp mathe-vorkurs.pdf dav/ei-erstsemester/vorlesungen/mathe-vorkurs/loesungen-KEINE-GARANTIE/.
       - name: Upload to Discord
         continue-on-error: true
         run: |
