@@ -1,6 +1,39 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 11.2}
+\begin{enumerate}[a)]
+\item
+    \begin{align*}
+        \frac{dy}{dx} &= \frac{2x}{x^2+1}y \\
+        \int \frac{1}{y} \,dy &= \int \frac{2x}{x^2+1} \,dx \\
+        \ln|y| &= \int \frac{1}{u} \,du,\ u = x^2+1,\ u' = 2x \\
+        \ln|y| &= \ln|u| + c \\
+        \ln|y| &= \ln|x^2+1| + c \\
+        \ln|y| &= \ln|e^c(x^2+1)| \\
+        y &= e^c(x^2+1) \\
+        y &= c(x^2+1) \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        \frac{dy}{dx} (y + 1)^2 + x^3 &= 0 \\
+        \int (y + 1)^2 \,dy &= \int -x^3 \,dx \\
+        \frac{(y + 1)^3}{3} &= \frac{-x^4}{4} + c \\
+        (y + 1)^3 &= \frac{-3x^4}{4} + c \\
+        y &= \sqrt[3]{\frac{-3x^4}{4} + c} - 1 \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        y(1-x) \frac{dy}{dx} &= 1-y^2 \\
+        \int \frac{y}{1-y^2} \,dy &= \int \frac{1}{1-x} \,dx \\
+        \frac{-1}{2} \int \frac{-2y}{1-y^2} \,dy &= \int \frac{1}{1-x} \,dx \\
+        \frac{-1}{2} \int \frac{1}{u} \,du &= -\ln|1-x| + c,\ u = 1-y^2,\ u' = -2y \\
+        \frac{1}{2} \ln|u| &= \ln|1-x| + c \\
+        \ln|1-y^2| &= \ln|(e^c(1-x))^2| \\
+        1-y^2 &= c(1-x)^2 \\
+        y &= \sqrt{c(1-x)^2 + 1} \\
+    \end{align*}
+
+\end{enumerate}
 \end{document}
