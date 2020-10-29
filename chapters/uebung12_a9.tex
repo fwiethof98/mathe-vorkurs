@@ -2,5 +2,32 @@
 \begin{document}
 \subsection{Aufgabe 12.9}
 
+$$\abs{z_1 - z_2} \geq \abs{z_1} - \abs{z_2}$$
+
+\begin{itemize}
+    \item Zunächst Beweis der komplexen Dreiecksungleichung
+    \item Daraus Ableitung der Ungleichung aus der Aufgabe
+\end{itemize}
+
+\begin{align}
+    \abs{z_1 + z_2} &\leq \abs{z_1} + \abs{z_2} \\
+    \\
+    z_1 \overline{z_1} + z_2 \overline{z_2} + \overline{z_1} z_2 + z_1 \overline{z_2} &\leq z_1 \overline{z_1} + z_2 \overline{z_2} + 2 \abs{z_1 z_2} \\
+    \overline{z_1}z_2 + z_1 \overline{z_2} &\leq 2 \abs{z_1 z_2} \text{, mit } abs{z_1 z_2} = z_1 \overline z_2 und z:=z_1\overline{z_2} \\
+    z + \overline{z} &\leq 2 \abs{z} \\
+    2 Re(z) &\leq 2 \abs{z}
+\end{align}
+Da $\abs{z} \geq Re(z)$, ist diese Aussage erfüllt.
+
+\begin{align}
+    \abs{z_1 + z_2} &\leq \abs{z_1} + \abs{z_2} \\
+    \abs{x} - \abs{y} &\leq \abs{z_1 + z_2} \text{, mit } z_1 = x+y, z_2 = -y \\
+    \abs{y} - \abs{x} &\leq \abs{z_1 + z_2} \text{, mit } z_1 = x+y, z_2 = -x \\
+    \rightarrow \abs{x + y} &\geq \abs{\abs{x} - \abs{y}} \\
+    \abs{x - y} &\geq \abs{\abs{x} - \abs{y}} \text{, mit } y = -y \\
+    \abs{x - y} &\geq \abs{x} - \abs{y} 
+\end{align}
+$x,y \in \mathbb{C}$, daher ist die Aussage bewiesen.
+
 
 \end{document}
