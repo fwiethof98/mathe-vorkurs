@@ -1,9 +1,30 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 12.4}
-
+\begin{table}[]
+	\begin{tabular}{lll}
+		& \multicolumn{1}{c}{Re(Z)} & Im(Z)  \\
+		$Z_1$  & \multicolumn{1}{c}{-1}    & i      \\
+		$\overline{Z_1}$ & 1                         & i      \\
+		$Z_1 Z_2$		& 4                         & 2i     \\
+		$\frac{Z_2}{Z_3}$& 1/20                      & 3/20 i \\
+		$ \frac{Z_1}{\overline{Z_2}Z_1^2}$& -3/65                     & 3/65 i \\
+		$\frac{Z_3}{2Z_1  -Z_2}$& 7/5                       & 1/5 i 
+	\end{tabular}
+\end{table}
 
 \subsection{Aufgabe 12.5}
-
+\begin{itemize}
+	\item[a)] Mitternachtsformel (gilt für alle) oder, Klammern/Zerlegung\\
+	$Z^2+(4-4i)Z-8i \equiv (Z+(2-2i))^2$\\
+	Dann erkennt man, dass $Z=-2+2i$ ist.\\	
+	\item[b)] Zerlegen:\\
+	$Z^2-Z-2Zi-3+i \equiv (Z-(2+i))(Z+(1-i))$ Also werden:\\
+	$Z_1=-1+i$und $Z_2=2+i$
+	\item[c)]2i zu ersten Gleichungs Seiten addieren $ z^2+(2+2i)Z+2i=1-i$\\
+	$ \equiv (z+(1+i))^2=1-i$ Quadratwurzel nehmen\\
+	$\leftrightarrow z+(1+i)=\sqrt{1-i}$ oder $-\sqrt{1-i}$\\
+	Dann kommt: $Z= \pm \sqrt{1-i} -(1+i)$\\
+\end{itemize}
 
 \end{document}
