@@ -1,5 +1,40 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 11.4}
+<<<<<<< HEAD
+\begin{enumerate}[a)]
+    \item \begin{align}
+        y' &= -\frac{x}{y} \\
+        y'y &= -x \\
+        y^2 &= -x^2 + c \\
+        y &= \sqrt{c-x^2}
+        y(1) &= 1 \text{ einsetzen} \\
+        1 &= \sqrt{c-1} \\
+        c &= 2 \\
+        \rightarrow y = \sqrt{2-x^2}
+    \end{align}
+    \item \begin{align}
+        y' &= e^y\sin x \\
+        \frac{y'}{e^y} &= sin x \\
+        \int \frac{1}{u^2}du &= \int sin x dx \text{, mit } u = e^y, du = y'e^y = y'u \\
+        -\frac{1}{e^y} &= -\cos x + c \\
+        y &= \ln \frac{1}{\cos x - c}
+        y(0) = 0 \text{ einsetzen} \\
+        0 &= \ln \frac{1}{1-c} \\
+        1 &= \frac{1}{1-c} \\
+        c &= 0 \\
+        \rightarrow y &= \ln \frac{1}{\cos x}
+    \end{align}
+    \item \begin{align}
+        x^2 y &= (1+x)y' \\
+        \frac{y'}{y} &= \frac{x^2}{1+x} \text{, Polynomdivision} \\
+        \int \frac{y'}{y}dy &= \int x - 1 + \frac{1}{1+x}dx \\
+        y &= e^{\frac{1}{2}x^2 - x + \ln (1+x)} + c \\
+        y(0) &= 1 \text{ einsetzen} \\
+        1 &= 1 + c\\
+        c &= 0 \\
+        \rightarrow y &= e^{\frac{1}{2}x^2 - x + \ln (1+x)}
+    \end{align}
+\end{enumerate}
 
 \end{document}
