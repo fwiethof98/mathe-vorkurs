@@ -54,7 +54,50 @@ $$ f(x,y) = y^4 - 3xy^2 + x^3 $$
 Lokale Extreme liegen bei:
 \begin{align}
     (x,y) &= (0,0) \\
-    (x,y)
+    &= (\frac{3}{2}, \frac{3}{2}) \\
+    \\
+    f(0,0) &= 0 \\
+    f(\frac{3}{2}, \frac{3}{2}) &\approx -1.69
+\end{align}
+
+Definitionsrand für globale Minima/Maxima untersuchen:
+\begin{align}
+    x &= -\frac{5}{2} \\
+    \rightarrow f(y) &= y^4 + \frac{15}{2} y^2 - \frac{125}{8} \\
+    f'(y) = 4y^3 + 15y &= 0 \\
+    y^2 + \frac{15}{4} &= 0 \vee y = 0 \\
+    y^2 &= -\frac{15}{4} \text{, undefiniert} \\
+    f(-\frac{5}{2},0) &= -\frac{125}{8}\\
+    f(-\frac{5}{2},-2) &= \frac{243}{8}\\
+    f(-\frac{5}{2},2) &= \frac{243}{8}
+    \\
+    x&= \frac{5}{2} \\
+    f'(y) = 4y^3 -\frac{15}y &= 0 \\
+    y^2 -\frac{15}{4} &= 0 \vee y=0\\
+    y &= \pm \frac{\sqrt{15}}{2} \\
+    f(\frac{5}{2},0) &= \frac{125}{8} \\
+    f(\frac{5}{2},\frac{\sqrt{15}}{2}) &= -\frac{425}{16} \\
+    f(\frac{5}{2},-\frac{\sqrt{15}}{2}) &= -\frac{425}{16} \\
+    f(\frac{5}{2}, -2) &= \frac{13}{8} \\
+    f(\frac{5}{2}, 2) &= \frac{13}{8}
+    \\
+    y&=2 \\
+    f'(x) = 16-12+x^2 &= 0 \\
+    x^2 &= -4 \text{, undefiniert} \\
+    f(-\frac{5}{2},2) &= \frac{243}{8} \\
+    f(\frac{5}{2},2) &= \frac{13}{8} \\
+    \\
+    y&=-2 \\
+    f'(x) = \text{identisch zu y=2}
+\end{align}
+
+Globale Maxima/Minima ergeben sich damit zu:
+\begin{align}
+    f(-\frac{5}{2},-2) &= \frac{243}{8} \\
+    f(-\frac{5}{2}, 2) &= \frac{243}{8} \\
+    \\
+    f(\frac{5}{2},\frac{\sqrt{15}}{2}) &= -\frac{425}{16} \\
+    f(\frac{5}{2},-\frac{\sqrt{15}}{2}) &= -\frac{425}{16}
 \end{align}
 
 \end{document}
