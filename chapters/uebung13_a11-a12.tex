@@ -1,9 +1,81 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 13.11}
+Die Multiplikation von $z \in \mathbb{C}$ mit der imaginären Einheit $i$ entspricht einer mathematisch positiven Rotation um 90 Grad in der komplexen Ebene.
+Sie lässt sich umschreiben durch
+$$ e^{i \frac{\pi}{2}} = \cos \frac{\pi}{2} + i \sin \frac{\pi}{2} = i $$
+Ersetzt man alle Vorkommnisse von $z$ durch die exponentielle Schreibweise $z = k e^{i \phi}$, erhält man
 
+$$ k = e^{i \frac{\pi}{2}} k^2e^{i 2 \phi} = e^{i (2 \phi + \frac{\pi}{2})} $$
+
+Trennung in Real- und Imaginärteil, sowie Koeffizientenvergleich führen zu 
+
+\begin{align}
+    \begin{matrix} 
+        k \\
+        0
+    \end{matrix}
+    &=
+    \begin{matrix} 
+        k^2 \cos (2 \phi + \frac{pi}{2}) \\
+        k \sin (2 \phi + \frac{pi}{2})
+    \end{matrix} \\
+    \begin{matrix} 
+        \frac{1}{k} \\
+        0
+    \end{matrix}
+    &=
+    \begin{matrix} 
+        \cos (2 \phi + \frac{pi}{2}) \\
+        \sin (2 \phi + \frac{pi}{2}) \wedge k \neq 0
+    \end{matrix} \\
+    \begin{matrix} 
+        \phi \\
+        \phi \\
+    \end{matrix}
+    &=
+    \begin{matrix} 
+        \frac{\arccos \frac{1}{k}}{2} - \frac{\pi}{4} \\
+        \frac{\arcsin (0)}{2} -\frac{\pi}{4} = \frac{n\pi}{2} -\frac{\pi}{4} \text{, für } n \in \mathbb{Z}
+    \end{matrix} \\    
+\end{align}
+
+Gleichsetzen:
+\begin{align}
+    \arccos \frac{1}{k} &= n\pi \\
+    k &= \cos (n\pi) = \pm 1
+\end{align}
+
+Die Gleichung gilt somit für alle $z:=ke^{i\phi}$ mit $k = \cos(n\pi)$ und $\phi = n\pi$.
+
+Geometrisch interpretiert: da $\abs{z}$ stets reell ist, dürfen die Lösungen der Gleichungen keinen Imaginärteil mehr besitzen. Daraus ergibt sich $\phi = n\pi$ mit $n \in \mathbb{Z}$, da somit die Zahl in der komplexen Ebene immer auf der x-Achse liegt.
+Da die Quadrierung der komplexen Zahl zu einer Quadrierung ihres Betrags führt, und der Betrag selbst stets positiv ist, muss $k = \pm 1$ sein.
 
 \subsection{Aufgabe 13.12}
+
+\begin{enumerate}[a)]
+    \item $$ arg(z_1 z_2) = arg(z_1) + arg(z_2) + 2\pi k$$
+    \begin{align}
+        z_1 &= k_1 e^{i\phi_1} \\
+        z_2 &= k_2 e^{i\phi_2} \\
+        z_1 z_2 &= (k_1 k_2) e^{i (\phi_1 + \phi_2)} \\
+        arg(z_1 z_2) &= \phi_1 + \phi_2
+    \end{align}
+    \item $$ arg(z_1 \overline{z_2}) = arg(z_1) - arg(z_2) + 2\pi k $$
+    \begin{align}
+        z_2 &= k_2 (\cos \phi_2 + i \sin \phi_2) \\
+        \overline{z_2} &= k_2(\cos \phi_2 - i \sin \phi_2) \\
+        &= k_2(\cos (-\phi_2) + i \sin (-\phi_2)) \\
+        &= k_2e^{-i\phi_2} \\
+        z_1 \overline{z_2} &= k_1 k_2 e^{\phi_1 - \phi_2} \\
+        arg(z_1 \overline{z_2}) &= \phi_1 - \phi_2
+    \end{align}
+\end{enumerate}
+Für beide Aufgabenteile gilt, aufgrund der Periodizität der komplexen Expontentialfunktion, dass Addition um $2 \pi k $ mit $k \in \mathbb{Z}$ den Wert nicht verändert.
+
+Für welche $z_1,z_2$ gilt die erste Aussage?
+
+Sie gilt für $\{z \in \mathbb{C} \mid \abs{z} \neq 0\}$. Die Multiplikation mit $0$ führt dazu, dass der Punkt auf den Koordinatenursprung gezogen wird. Da das Argument relativ zu den Koordinatenachsen gebildet wird, ist es im Koordinatenursprung undefiniert.
 
 
 \end{document}
