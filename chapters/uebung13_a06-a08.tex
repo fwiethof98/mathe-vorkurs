@@ -1,12 +1,70 @@
 \documentclass{standalone}
 \begin{document}
 \subsection{Aufgabe 13.6}
+\begin{enumerate}[a)]
+\item
+    \begin{align*}
+        \cos(z)^2+\sin(z)^2 = 1 \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        \cosh(iz) &= \frac{e^{iz}+e^{-iz}}{2} \\
+                  &= \frac{\cos(z)+i\sin(z)+\cos(-z)+i\sin(-z)}{2} \\
+                  &= \frac{2\cos(z)}{2} \\
+                  &= \cos(z) \\
+    \end{align*}
+
+\item
+    \begin{align*}
+        \sinh(iz) &= \frac{e^{iz}-e^{-iz}}{2} \\
+                  &= \frac{\cos(z)+i\sin(z)-\cos(-z)-i\sin(-z)}{2} \\
+                  &= \frac{2i\sin(z)}{2} \\
+                  &= i\sin(z) \\
+    \end{align*}
+
+\end{enumerate}
 
 \subsection{Aufgabe 13.7}
+    \begin{align*}
+        \overline{e^z} &= \overline{e^{a+bi}} \\
+                       &= \overline{e^a(\cos(b)+i\sin(b))} \\
+                       &= e^a(\cos(b)-i\sin(b)) \\
+                       &= e^a(\cos(-b)+i\sin(-b)) \\
+                       &= e^a e^{-bi} \\
+                       &= e^{a-bi} \\
+                       &= e^{\overline{z}} \\
+    \end{align*}
 
+\subsection{Aufgabe 13.8}
+\begin{enumerate}[a)]
+\item
+    \begin{align*}
+        (1-i)^{100} &= \left(\sqrt{2}\left(\frac{1}{\sqrt{2}}-\frac{1}{\sqrt{2}}i\right)\right)^{100} \\
+                    &= \left(\sqrt{2}e^{\frac{-\pi}{4}i}\right)^{100} \\
+                    &= 2^{50} e^{-25 \pi i} \\
+                    &= 2^{50} e^{-\pi i} \\
+                    &= -2^{50} \\
+    \end{align*}
 
-\subsection{Aufgabe 13.7}
+\item
+    \begin{align*}
+        (\frac{\sqrt{3}}{2}+\frac{1}{2}i)^{111} &= \left(e^{\frac{\pi}{6}i}\right)^{111} \\
+                    &= e^{\frac{111\pi}{6}i} \\
+                    &= e^{\frac{1\pi}{2}i} \\
+                    &= i \\
+    \end{align*}
 
+\item
+    \begin{align*}
+        (1+i)^{2n}+(1-i)^{2n} &= \left(\sqrt{2}e^{\frac{\pi}{4}i}\right)^{2n} + \left(\sqrt{2}e^{\frac{-\pi}{4}i}\right)^{2n} \\
+                              &= \sqrt{2}e^{\frac{n\pi}{2}i} + \sqrt{2}e^{\frac{-n\pi}{2}i} \\
+                              &= \sqrt{2}\left(e^{\frac{n\pi}{2}i} + e^{\frac{-n\pi}{2}i}\right) \\
+                              &= \sqrt{2}\left(\cos\left(\frac{n\pi}{2}\right) + i\sin\left(\frac{n\pi}{2}\right) + \cos\left(\frac{-n\pi}{2}\right) + i\sin\left(\frac{-n\pi}{2}\right)\right) \\
+                              &= \sqrt{2}\left(\cos\left(\frac{n\pi}{2}\right) + i\sin\left(\frac{n\pi}{2}\right) + \cos\left(\frac{n\pi}{2}\right) - i\sin\left(\frac{n\pi}{2}\right)\right) \\
+                              &= \sqrt{2}\left(2\cos\left(\frac{n\pi}{2}\right)\right) \\
+                              &= 2^{\frac{3}{2}}\cos\left(\frac{n\pi}{2}\right) \\
+    \end{align*}
 
+\end{enumerate}
 \end{document}
